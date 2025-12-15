@@ -1,11 +1,379 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
+import Swipper from '../components/home/swipper.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+//Imagenes
+import {Image} from 'astro:assets';
 ---
 
+<link rel="stylesheet" href="/css/styles.css" />
 <Layout>
-	<Welcome />
+	<Header />
+    <!-- Hero -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-3">See your baby. <br />Feel the moment.</h1>
+					<div class="col-10">
+						<p class="lead fs-3 fw-semibold mb-3">Elective 2D, 3D and 4D Ultrasounds in Tampa.</p>
+						<ul class="list-unstyled fs-5 mb-4">
+							<li class="mb-2 d-flex align-items-start">
+								<span class="me-2 fw-bold">•</span>
+								<span>Certified Bilingual Professionals</span>
+							</li>
+							<li class="d-flex align-items-start">
+								<span class="me-2 fw-bold">•</span>
+								<span>Where medical precision meets human warmth.</span>
+							</li>
+						</ul>
+					</div>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#" class="btn btn-outline-primary rounded-pill fs-6">Book Your Ultrasound</a>
+                        <a href="#" class="btn btn-primary rounded-pill fs-6">Telehealth Consultation</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-2">
+						<Swipper />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Info Cards -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4 text-center justify-content-center">
+                <div class="col-md-3 mb-5">
+                    <div class="card shadow border-0 rounded-5 h-100">
+                        <div class="card-body">
+                            <img src="img/home/info1.png" class="img-fluid mb-3" alt="Icon 1" width="150" height="150">
+                            <h5 class="card-title">Certified bilingual professionals</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mt-5">
+                    <div class="card shadow border-0 rounded-5 h-100">
+                        <div class="card-body">
+                            <img src="img/home/info2.png" class="img-fluid mb-3" alt="Icon 2" width="150" height="150">
+                            <h5 class="card-title">HIPAA-compliant secure booking</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-5">
+                    <div class="card shadow border-0 rounded-5 h-100">
+                        <div class="card-body">
+                            <img src="img/home/info3.png" class="img-fluid mb-3" alt="Icon 3" width="150" height="150">
+                            <h5 class="card-title">In-home ultrasound options in Tampa & Central Florida</h5>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Your First Hello -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="display-5 text-center fw-bold mb-4">Your First Hello.</h2>
+            <div class="row g-3">
+                <div class="col-6 col-md-4">
+                    <img src="img/home/gallery_1.png" class="img-fluid rounded-5 w-100" alt="Gallery 1">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img src="img/home/gallery_2.png" class="img-fluid rounded-5 w-100" alt="Gallery 2">
+                </div>
+                <div class="col-6 col-md-4">
+                    <img src="img/home/gallery_3.png" class="img-fluid rounded-5 w-100" alt="Gallery 3">
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <a href="#" class="link-primary text-decoration-none">View more</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4 mt-1">
+                <h2 class="display-5 fw-bold mb-0">Services</h2>
+                <div class="col-lg-6 mt-0 pe-5">
+                    <h3 class="h5 text-muted mb-3">Elective ultrasounds</h3>
+                    <p class="fs-5 mb-3">
+                        <span class="fw-bold">See your baby in 2D, 3D, and 4D.</span> Experience the joy of meeting your baby before birth.
+                        Our elective ultrasounds are designed to create unforgettable moments for families.
+                        Enjoy our cozy environment of peace in an ultrasound in Tampa or Central Florida.
+                    </p>
+                    <h4 class="h3 text-primary mb-3">Features</h4>
+                    <ul class="list-unstyled fs-5">
+                        <li class="mb-2 d-flex"><img src="/img/home/features_heart.svg" class="border border-2 border-primary-subtle rounded-circle p-1 me-2" alt="Check" width="30" height="30"><span>Non-diagnostic, emotional experience.</span></li>
+                        <li class="mb-2 d-flex"><img src="/img/home/features_message.svg" class="border border-2 border-primary-subtle rounded-circle p-1 me-2" alt="Check" width="30" height="30"><span>Certified bilingual team.</span></li>
+                        <li class="mb-2 d-flex"><img src="/img/home/features_fhd.svg" class="border border-2 border-primary-subtle rounded-circle p-1 me-2" alt="Check" width="30" height="30"><span>HD and 4K imaging technology.</span></li>
+                        <li class="d-flex"><img src="/img/home/features_hipaa.svg" class="border border-2 border-primary-subtle rounded-circle p-1 me-2" alt="Check" width="30" height="30"><span>HIPAA-compliant secure booking system.</span></li>
+                    </ul>
+                    <a href="#" class="btn btn-primary rounded-pill mt-4">Book Your Ultrasound</a>
+                </div>
+                <div class="col-lg-6 mt-0">
+                    <img src="img/home/gallery_services.webp" class="img-fluid rounded w-100" alt="Service preview">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Difference -->
+    <section class="py-5 mb-5">
+        <div class="container">
+            <h2 class="display-5 text-center fw-bold mb-4">Our Difference</h2>
+            <div class="row justify-content-center g-4 mt-5">
+                <div class="col-12 col-md-4 d-flex align-items-center">
+                    <img src="img/home/check-01.png" class="me-3" alt="Doctor Icon" width="150" height="150">
+                    <div>
+                        <div class="fw-semibold fs-5">Bilingual Licensed Physician Associate</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 d-flex align-items-center">
+                    <img src="img/home/check-01.png" class="me-3" alt="Doctor Icon" width="150" height="150">
+                    <div>
+                        <div class="fw-semibold fs-5">Optimized Smart Booking</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 d-flex align-items-center">
+                    <img src="img/home/check-01.png" class="me-3" alt="Doctor Icon" width="150" height="150">
+                    <div>
+                        <div class="fw-semibold fs-5">Local Expertise in Tampa & Central Florida</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- From 4D Motion to 8K Emotion -->
+    <section class="py-5 blue-gradient text-white mb-5">
+        <div class="container">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-6 fs-5 pe-5">
+                    <h2 class="display-5 fw-bold mb-2">From 4D Motion<br />to 8K Emotion</h2>
+                    <p class="mb-3">
+                        Our elective 4D sessions capture your baby’s real movements and transform them into breathtaking 8K baby portraits, memories you can keep forever.
+                    </p>
+                    <div>
+                        <a href="#" class="btn btn-warning fs-5 rounded-pill text-dark fw-semibold px-5 py-2">Book Now</a>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-6 position-relative">
+                    <img src="img/home/baby_banner.webp" class="img-fluid rounded w-100 baby-banner" alt="8K emotion preview">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Customers Say -->
+    <section class="py-5 mt-5">
+        <div class="container">
+            <h2 class="display-5 text-center fw-bold mb-5">Our Customers Say</h2>
+
+            <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <p class="small text-muted mb-4">“From the moment I walked in, I felt safe and cared for.<br>
+                                        The team made my ultrasound such a special experience — we even got to see our baby’s little smile in 8K!<br>
+                                        I’ll treasure that memory forever.”</p>
+                                        <div class="d-flex align-items-center">
+                                            <img src="img/home/review1.jpg" alt="Emily R. (Tampa, FL)" class="rounded-circle me-2" width="48" height="48">
+                                            <p class="mb-0 fw-semibold">Emily R. (Tampa, FL)<br /><span class="d-block text-secondary small">Doctor</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <p class="small text-muted mb-4">“I was nervous at first, but Dr. Eloika explained everything with so much patience.<br>
+                                        It didn’t feel like a clinic — it felt like family.<br>
+                                        Their kindness made me cry (in a good way).”</p>
+                                        <div class="d-flex align-items-center">
+                                            <img src="img/home/review2.jpg" alt="Gabriela M. (Clearwater, FL)" class="rounded-circle me-2" width="48" height="48">
+                                            <p class="mb-0 fw-semibold">Gabriela M. (Clearwater, FL)<br /><span class="d-block text-secondary small">Customer</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <p class="small text-muted mb-4">“Their telemedicine service is incredible.<br>
+                                        I had my consultation from home in perfect Spanish and got my lab orders the same day.<br>
+                                        Fast, easy, and trustworthy!”</p>
+                                        <div class="d-flex align-items-center">
+                                            <img src="img/home/review3.jpg" alt="Carla A. (Orlando, FL)" class="rounded-circle me-2" width="48" height="48">
+                                            <p class="mb-0 fw-semibold">Carla A. (Orlando, FL)<br /><span class="d-block text-secondary small">Customer</span></p> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row g-3">
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <p class="small text-muted mb-4">“Dr. Eloika truly brought me peace of mind. I had been postponing a medical consult for weeks because of my schedule, but meeting with her online made everything easy and comforting. She listened without rushing, explained every detail clearly, and sent my lab orders the same day. The follow-up has been exceptional. You can feel her passion for patient care.”</p>
+                                        <div class="d-flex align-items-center">
+                                            <img src="img/home/review4.jpg" alt="María Fernanda R." class="rounded-circle me-2" width="48" height="48">
+                                            <p class="mb-0 fw-semibold">María Fernanda R.<br /><span class="d-block text-secondary small">Customer</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <p class="small text-muted mb-4">“SaludLink made this moment unforgettable for our family. Seeing our baby was magical, but the way she guided us through the entire session made it even more special. She was warm, patient, and incredibly professional. The images came out beautifully, and her explanations helped us understand everything. We left with full hearts.”</p>
+                                        <div class="d-flex align-items-center">
+                                            <img src="img/home/review2.jpg" alt="Gabriela & Luis M." class="rounded-circle me-2" width="48" height="48">
+                                            <p class="mb-0 fw-semibold">Gabriela &amp; Luis M.<br /><span class="d-block text-secondary small">Customer</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <p class="small text-muted mb-4">“Eloika is an exceptional professional and an even more amazing human being. From the moment I walked in, she made me feel safe, understood, and cared for. I love that she’s bilingual—it made it so much easier to express myself. Her blend of medical professionalism and genuine kindness builds instant trust. I’ll definitely keep coming back.”</p>
+                                        <div class="d-flex align-items-center">
+                                            <img src="img/home/review3.jpg" alt="Jessica P." class="rounded-circle me-2" width="48" height="48">
+                                            <p class="mb-0 fw-semibold">Jessica P.<br /><span class="d-block text-secondary small">Customer</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center gap-2 mt-3">
+                    <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">Prev</button>
+                    <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">Next</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ready to Begin -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="h3 fw-bold mb-4">Ready to Begin?</h2>
+            <p class="text-muted">We’re here to take care of you, wherever you are.</p>
+
+            <div class="row gy-4 align-items-center">
+                <!-- Left: Form -->
+                <div class="col-12 col-lg-8">
+                    <form class="row gy-3">
+                        <!-- Row 1 -->
+                        <div class="col-12 col-md-6">
+                            <label class="form-label">Name</label>
+                            <input type="text" class="form-control" placeholder="Your name" />
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label class="form-label">Phone</label>
+                            <input type="tel" class="form-control" placeholder="(###) ###-####" />
+                        </div>
+
+                        <!-- Row 2 -->
+                        <div class="col-12 col-md-6">
+                            <label class="form-label">ZIP/Postal Code</label>
+                            <input type="text" class="form-control" placeholder="ZIP code" />
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label class="form-label">How many weeks are you?</label>
+                            <select class="form-select">
+                                <option value="">Select</option>
+                                <option>0-8 weeks</option>
+                                <option>9-16 weeks</option>
+                                <option>17-24 weeks</option>
+                                <option>25-32 weeks</option>
+                                <option>33+ weeks</option>
+                            </select>
+                        </div>
+
+                        <!-- Notes spanning both columns -->
+                        <div class="col-12">
+                            <label class="form-label">Notes</label>
+                            <textarea class="form-control" rows="4" placeholder="Add any notes or preferences"></textarea>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Right: Actions -->
+                <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center h-100 mt-0">
+                    <div class="d-flex flex-column gap-2">
+                        <a href="#" class="btn btn-primary rounded-pill fs-5">Book Your Ultrasound</a>
+                        <a href="#" class="btn btn-outline-primary rounded-pill fs-5">Start Televisit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="pt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <p class="fw-bold mb-2">SALUDLINK & WELLNESS</p>
+                    <img src="img/logo.png" class="img-fluid rounded mb-3" alt="Brand mark" style="max-width: 300px;">
+                    <!--<img src="https://picsum.photos/200/100?random=11" class="img-fluid rounded" alt="Partner logo">-->
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Contact Us</h5>
+                    <ul class="list-unstyled mb-3">
+                        <li class="mb-1"><img src="img/home/ws_icon.svg" alt="Whatsapp icon" class="me-2" width="20" height="20">813-418-9983</li>
+                        <li class="mb-1"><img src="img/home/clock_icon.svg" alt="Clock icon" class="me-2" width="20" height="20">Monday - Friday</li>
+                        <li class="mb-1 ms-4">9:00 AM - 6:00 PM</li>
+                        <li class="mb-1 ms-4">Saturday</li>
+                        <li class="mb-1 ms-4">10:00 AM - 2:00 PM</li>
+                        <li class="mb-1"><img src="img/home/mail_icon.svg" alt="Mail icon" class="me-2" width="20" height="20">info@saludlinkwellness.com</li>
+                        <li class="mb-1"><img src="img/home/location_icon.svg" alt="Location icon" class="me-2" width="20" height="20">8507 N Armenia Ave., Suite 7, Tampa, Florida, 33604</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Find Us</h5>
+                    <div class="mb-2">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d622.4973309911577!2d-82.57976413608462!3d28.04352132729161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2eb5319c055dd%3A0x75a2299d981f8f84!2sSaludLink%20%26%20Wellness%20-%20Ultrasound!5e0!3m2!1ses-419!2sve!4v1765565518779!5m2!1ses-419!2sve"
+                            width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    <a href="https://www.google.com/maps/place/SaludLink+%26+Wellness+-+Ultrasound/@28.043482,-82.578806,18z/data=!4m6!3m5!1s0x88c2eb5319c055dd:0x75a2299d981f8f84!8m2!3d28.0434816!4d-82.5788059!16s%2Fg%2F11yl8w9w95?hl=es-419&entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D" 
+                    target="_blank" rel="noopener" class="btn btn-outline-primary btn-sm w-100">
+                        Open in Google Maps
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center text-center gap-0">
+                <a href="#"><img src="img/home/ig_icon.svg" alt="Instagram icon" width="40" height="40"></a>
+                <a href="#"><img src="img/home/fb_icon.svg" alt="Facebook icon" width="40" height="40"></a>
+                <a href="#"><img src="img/home/ws_icon.svg" alt="Whatsapp icon" width="40" height="40"></a>
+                <a href="#"><img src="img/home/tiktok_icon.svg" alt="TikTok icon" width="40" height="40"></a>
+            </div>
+        </div>
+        <div class="border-top mt-4 py-2" style="background-color: #000075;">
+            <div class="container small text-white text-center">
+                <span class="fw-semibold">Legal Notice:</span> Our ultrasound services are elective and non-diagnostic and are not a replacement for medical care. Please consult your medical provider to diagnose or rule out health issues.
+            </div>
+        </div>
+    </section>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </Layout>

@@ -1,0 +1,58 @@
+---
+
+---
+<link rel="stylesheet" href="/src/styles/swipper.css">
+
+<div class="demo-slider">
+  <!-- container: añade la clase .swiper y opcionalmente .swiper-material -->
+  <!-- altura y ancho ampliados con style para hacer el slider más grande -->
+  <div
+    class="swiper swiper-material"
+    style="height:420px; max-width:1000px; width:calc(100% - 32px);"
+  >
+    <div class="swiper-wrapper">
+      <!-- 6 slides -->
+      <div class="swiper-slide">
+        <div class="swiper-material-wrapper">
+          <div class="swiper-material-content">
+            <img
+              class="demo-material-image"
+              src="/img/home/hero1.JPG"
+              alt=""
+            />
+            <div class="demo-material-label">Slide 1</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="swiper-material-wrapper">
+          <div class="swiper-material-content">
+            <img
+              class="demo-material-image"
+              src="/img/home/hero2.PNG"
+              alt=""
+            />
+            <div class="demo-material-label">Slide 2</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="swiper-material-wrapper">
+          <div class="swiper-material-content">
+            <img
+              class="demo-material-image"
+              src="/img/home/hero3.PNG"
+              alt=""
+            />
+            <div class="demo-material-label">Slide 3</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Llama a la función exportada (el módulo debe adjuntar window.initSwipper o exportarla y asignarla) -->
+<script type="module" src="/src/scripts/swipper.js"></script>
