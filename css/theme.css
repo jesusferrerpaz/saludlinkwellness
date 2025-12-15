@@ -1,0 +1,24 @@
+:root,
+[data-bs-theme="light"] {
+  --bs-warning: #CAA33C;
+  --bs-warning-rgb: 202, 163, 60;
+
+  --bs-warning-text-emphasis: #5a4a17;
+  --bs-warning-bg-subtle: #f4e9c3;
+  --bs-warning-border-subtle: #e6d59a;
+
+  --bs-yellow: #CAA33C;
+  --bs-yellow-rgb: 202, 163, 60;
+}
+
+[data-bs-theme="dark"] {
+  --bs-warning: #CAA33C;
+  --bs-warning-rgb: 202, 163, 60;
+
+  --bs-warning-text-emphasis: #ffe19a;
+  --bs-warning-bg-subtle: #2b260f;
+  --bs-warning-border-subtle: #4f4319;
+
+  --bs-yellow: #CAA33C;
+  --bs-yellow-rgb: 202, 163, 60;
+}

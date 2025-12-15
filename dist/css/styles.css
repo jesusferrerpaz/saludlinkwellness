@@ -1,0 +1,16 @@
+.blue-gradient{
+    background: #2F75E6;
+    background: radial-gradient(circle, rgba(47, 117, 230, 1) 0%, rgba(40, 65, 105, 1) 100%);
+}
+
+.baby-banner {
+    position: absolute;
+    top: -140px;
+}
+
+@media (max-width: 998px) {
+    .baby-banner {
+        position: relative;
+        top: 0;
+    }
+}
