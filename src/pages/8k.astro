@@ -1,0 +1,208 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FAQItem from '../components/FAQItem.astro';
+import Dcards from '../components/8k/DCards.astro';
+import rButtonLBlue from '../assets/icons/rbutton_lblue.svg';
+import rButtonBlue from '../assets/icons/rbutton_blue.svg';
+import rButtonYellow from '../assets/icons/rbutton_yellow.svg';
+---
+
+<Layout
+  title="8K Baby Image from 4D Ultrasound | Hyper-Realistic Baby Photo Tampa"
+  metaDescription="Turn your 4D ultrasound into an 8K baby image. Emotional, lifelike 8K baby photo sessions in Tampa. Elective, non-diagnostic, unforgettable. Book your appointment."
+>
+  <Header />
+  <main>
+    <!-- Hero (background image covers entire section) -->
+    <section class="position-relative text-white" aria-label="Hero" style="min-height:420px;" data-aos="fade-up">
+      <!-- Background image layer -->
+      <div class="position-absolute top-0 start-0 w-100 h-100" style="background-image: url('/img/8k/baby_hero_background.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; filter: brightness(0.55);"></div>
+
+      <!-- Content (positioned above background) -->
+      <div class="container position-relative py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <h1 class="display-4 fw-bold mb-3">From 4D Ultrasound<br />to 8K Baby Image</h1>
+            <p class="lead fs-4 fw-semibold mb-3">Emotional. Beautiful. Unforgettable. A first connection with your baby.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="https://www.optimantra.com/optimus/patient/patientaccess/modalities?pid=aW9kcWFMNis2blNxN1Q1M0U1MHc2QT09&lid=RGI5R2o0cVJ0UXo1OEdueE9lYy9zZz09" target="_blank" class="btn btn-warning rounded-pill text-white fw-semibold px-4">Book Your Ultrasound</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="py-5" data-aos="fade-up">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-md-6">
+            <p class="fs-5 mb-3">Our elective ultrasounds are designed for one purpose: to help families connect deeply with their baby in a safe, warm, and non-diagnostic environment.</p>
+            <p class="fs-5 mb-3">At SaludLink &amp; Wellness, our 2D, 3D, and 4D ultrasound sessions are guided by trained professionals who combine empathy, clarity, and a caring approach. These experiences are not medical exams. They are family moments that help parents see their baby’s unique movements, features, and personality in a beautiful, realistic way.</p>
+          </div>
+          <div class="col-md-6 justify-content-center d-flex">
+            <img src="/img/8k/Intro_right.webp" alt="Family ultrasound" class="img-fluid rounded-4" width="450px" data-aos="fade-left"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Buttons -->
+    <section id="experience" class="py-5" data-aos="fade-up">
+      <div class="container text-center">
+        <h3 class="fw-semibold mb-4">We offer a complete elective experience:</h3>
+        <div class="d-inline-flex justify-content-center rounded-4 gap-0 flex-wrap" style="background: #caa33c;">
+          <span class="text-white fw-semibold rounded-4 px-5 py-4 fs-5" style="background: #aa8626;">2D Ultrasound</span>
+          <span class="text-white fw-semibold rounded-0 px-5 py-4 fs-5">3D Ultrasound</span>
+          <span class="text-white fw-semibold rounded-4 px-5 py-4 fs-5" style="background: #aa8626;">4D Ultrasound</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing / Packages -->
+    <section id="pricing" class="py-5 mb-5" data-aos="fade-up">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <p class="text-center fs-5 mb-5">Every 2D, 3D and 4D ultrasound session can be done in English or Spanish to ensure clarity and comfort.</p>
+          <!-- 2D-->
+          <div class="col-12 col-lg-4 mb-5 mb-lg-0" data-aos="flip-left" data-aos-delay="0">
+            <Dcards
+              containerClass="shadow-light-blue-gradient"
+              title="2D"
+              titleClass="text-light-blue-gradient"
+              subtitle="Ultrasound Your Baby’s First Emotional Glimpse"
+              description="A 2D ultrasound session allows you to watch your baby’s movements in real time, kicks, stretches, or peaceful stillness, while enjoying a warm, non-diagnostic, bonding experience."
+              highlight="Our 2D ultrasound experience is perfect for:"
+              highlightClass="light-blue-gradient"
+              icon={rButtonLBlue}
+              features={[
+                { text: "Early bonding moments" },
+                { text: "Families who want a simple, beautiful first look" },
+                { text: "Parents who prefer a classic ultrasound style" },
+                { text: "Those preparing for 3D or 4D upgrades" },
+                { text: "Families searching for affordable elective options" }
+              ]}
+              footerText="In our studio, a 2D ultrasound is not about medical measurements or clinical evaluation; it’s about your emotional connection with your baby."
+              buttonText="Book Now"
+            />
+          </div>
+          <!-- 3D -->
+          <div class="col-12 col-lg-4 mb-5 mb-lg-0" data-aos="flip-left" data-aos-delay="150">
+            <Dcards
+              containerClass="shadow-blue-gradient"
+              title="3D"
+              titleClass="text-blue-gradient"
+              subtitle="Ultrasound See Baby’s Features Clearly"
+              description="A 3D ultrasound session offers families a detailed, enhanced image of their baby’s facial traits and physical features."
+              highlight="Parents love 3D ultrasound because it captures:"
+              highlightClass="blue-gradient"
+              icon={rButtonBlue}
+              features={[
+                { text: "Chubby cheeks" },
+                { text: "Nose shape" },
+                { text: "Little hands" },
+                { text: "Sleeping profiles" },
+                { text: "Expressions" }
+              ]}
+              footerText="Our elective 3D ultrasound sessions let families enjoy a peaceful, emotional first look long before birth."
+              buttonText="Book Now"
+            />
+          </div>
+          <!-- 4D -->
+          <div class="col-12 col-lg-4 mb-5 mb-lg-0" data-aos="flip-left" data-aos-delay="300">
+            <Dcards
+              containerClass="shadow-golden-gradient"
+              title="4D"
+              titleClass="text-golden-gradient"
+              subtitle="Ultrasound Watch Baby Move in Real Time"
+              description="A 4D ultrasound Tampa session adds movement and personality. This elective bonding experience lets families see:"
+              textColor="text-dark-golden fw-bold"
+              highlight="Parents love 4D ultrasound because it captures:"
+              highlightClass="golden-gradient"
+              icon={rButtonYellow}
+              features={[
+                { text: "Yawns" },
+                { text: "Stretches" },
+                { text: "Little kicks" },
+                { text: "Movements" },
+                { text: "Expressions" },
+                { text: "Comforting motions" }
+              ]}
+              footerText="Our studio’s warm environment helps families immerse themselves in the magic of 4D ultrasound without clinical tension."
+              buttonText="Book Now"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8K Upgrade CTA -->
+    <section class="py-5" data-aos="fade-up">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 text-center">
+            <h3 class="fw-semibold mb-4">Turn your 4D Ultrasound into a high‑quality, realistic baby image</h3>
+            <p class="fs-5 mb-3">Our 8K image enhancement transforms high‑quality ultrasound images into stunning, lifelike portraits.</p>
+            <a href="#" class="btn btn-outline-primary rounded-pill px-5 fs-6 fw-semibold">More info</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="py-5" data-aos="fade-up">
+      <div class="container">
+        <h2 class="h4 fw-bold text-center mb-4">FAQs</h2>
+        <div class="row g-3 justify-content-center">
+          <FAQItem 
+            question="Is the 8K baby image safe?" 
+            answer="Yes. It uses your existing ultrasound, no additional scanning."
+            id="faqSafe"
+            parentId="faqAccordionCol1"
+            aos="flip-left"
+            aosDelay="0"
+          />
+          <FAQItem 
+            question="Is this a diagnostic service?" 
+            answer="No. The 8K baby photo is purely elective."
+            id="faqDiagnostic"
+            parentId="faqAccordionCol2"
+            aos="flip-left"
+            aosDelay="150"
+          />
+          <FAQItem 
+            question="How long does it take?" 
+            answer="Most families receive their 8K baby image within a short processing window."
+            id="faqTime"
+            parentId="faqAccordionCol3"
+            aos="flip-left"
+            aosDelay="300"
+          />
+          <FAQItem 
+            question="Is prenatal ultrasound available in Spanish?" 
+            answer="Yes. We can assist in English or Spanish."
+            id="faqLanguage"
+            parentId="faqAccordionCol4"
+            aos="flip-left"
+            aosDelay="450"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-5" data-aos="fade-up">
+      <div class="container">
+        <div class="text-center">
+          <h3 class="h5 fw-bold mb-3">Book Your Elective Ultrasound in Tampa</h3>
+          <a href="#" class="btn btn-outline-primary rounded-pill px-5 fs-6 fw-semibold">Book Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <Footer />
+  </footer>
+</Layout>

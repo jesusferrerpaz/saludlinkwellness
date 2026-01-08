@@ -1,0 +1,63 @@
+---
+type Feature = { icon?: any; text: string };
+
+const {
+  title,
+  titleClass = "",
+  subtitle,
+  description,
+  textColor = "text-white",
+  highlight,
+  highlightClass = "",
+  features = [],
+  footerText,
+  containerClass = "",
+  icon: defaultIcon, // nuevo: icono por defecto para cada feature
+} = Astro.props as {
+  title: string;
+  titleClass?: string;
+  subtitle: string;
+  description?: string;
+  textColor?: string;
+  highlight: string;
+  highlightClass?: string;
+  features: Feature[];
+  footerText: string;
+  containerClass?: string;
+  icon?: any;
+};
+---
+
+<div class={`rounded-3 bg-white px-4 pb-4 h-100 d-flex flex-column ${containerClass}`}>
+  <div class="plan-main-content flex-grow-1">
+    <h3 class={`text-center mt-4 ${titleClass}`}>{title}</h3>
+    <p class="fw-bold text-center mb-2 px-5">{subtitle}</p>
+    {description && (<p class="text-start mb-2">{description}</p>)}
+    <div class={`${highlightClass} col-9 rounded-3 py-1 px-3 my-3`} style="position: relative; left: -8%;">
+      <p class={`text-start ${textColor} fw-semibold mb-0`}>{highlight}</p>
+    </div>
+    <ul class="list-unstyled mb-auto">
+      {
+        features.map((feature) => {
+          const Icon = feature.icon ?? defaultIcon;
+          return (
+            <li class="d-flex align-items-start mb-2">
+              <span class="me-2 d-inline-flex align-items-center justify-content-center" style="width: 20px; height: 20px;">
+                {
+                  typeof Icon === 'string'
+                    ? <img src={Icon} alt="" width="20" height="20" loading="lazy" />
+                    : Icon
+                      ? <Icon />
+                      : null
+                }
+              </span>
+              <span class="fw-semibold">{feature.text}</span>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
+  <div><p class="fs-6">{footerText}</p></div>
+</div>
+<div class={`text-center ${highlightClass} w-75 m-auto rounded-3 scale-effect`}><a href="https://www.optimantra.com/optimus/patient/patientaccess/modalities?pid=aW9kcWFMNis2blNxN1Q1M0U1MHc2QT09&lid=RGI5R2o0cVJ0UXo1OEdueE9lYy9sZz09" target="_blank" class={`btn fs-5 fw-bold ${textColor}`}>Book Now</a></div>

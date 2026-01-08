@@ -1,0 +1,298 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FAQItem from '../components/FAQItem.astro';
+import TeleReasonCard from '../components/telemedicine/TeleReasonCard.astro';
+import rButtonBlue from '../assets/icons/rbutton_blue.svg';
+---
+<Layout
+  title="Telemedicine in Florida | Online Medical Visits and Virtual Care"
+  metaDescription="Telemedicine in Florida with licensed professionals. Compassionate virtual medical care, online medical visits Florida, and bilingual support in Tampa and statewide."
+>
+  <Header />
+  <main>
+    <!-- Hero Section -->
+    <section class="container py-5 mt-5">
+      <div class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="col-md-10 col-12">
+            <h1 class="display-4 fw-bold mb-3">Telemedicine in Florida</h1>
+            <p class="fs-5 fw-semibold mb-4">Human, modern, and accessible medical care from anywhere.</p>
+            <a href="https://www.optimantra.com/optimus/patient/patientaccess/modalities?pid=aW9kcWFMNis2blNxN1Q1M0U1MHc2QT09&lid=RGI5R2o0cVJ0UXo1OEdueE9lYy9sZz09" target="_blank" class="btn btn-primary rounded-pill px-4 py-2 fw-semibold mb-3" data-aos="fade-up" data-aos-delay="200">Book Telemedicine Visit</a>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center" data-aos="fade-left">
+          <img src="/img/telemedicine/hero-tele.webp" class="img-fluid rounded-4 shadow-sm" alt="Telemedicine doctor" style="max-width:400px;">
+        </div>
+      </div>
+    </section>
+
+    <!-- What Telemedicine Means Today -->
+    <section class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-md-5 mb-4 mb-md-0">
+          <h2 class="h4 fw-bold mb-3">What Telemedicine in Florida Really Means Today</h2>
+          <img src="/img/telemedicine/FloridaSign.webp" class="img-fluid rounded-4 shadow-sm" alt="Welcome to Florida" data-aos="fade-right">
+        </div>
+        <div class="col-md-7">
+          <p class="mt-5">
+            Telemedicine in Florida has changed the way patients access health services. Instead of waiting in crowded clinics or driving across long distances, telemedicine in Florida offers fast, secure, and highly personalized medical care from the comfort of home.
+          </p>
+          <p>
+            Patients who choose telemedicine often look for convenience, accessibility, and empathy, three things we prioritize in every appointment.
+          </p>
+          <p>
+            At SaludLink &amp; Wellness, our telemedicine approach is built with one goal: bring reliable medical care to you, no matter where you live in the state.
+          </p>
+          <p>
+            Whether you are in Tampa, Orlando, Miami, Jacksonville, or any other region, our telemedicine services allow you to speak with a real medical professional who listens, evaluates, explains, and guides you with clarity.
+          </p>
+          <p class="mb-0">
+            Because today, healthcare should adjust to people’s lives, not the other way around.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why More Patients Choose Telemedicine -->
+    <section class="container py-4">
+      <h2 class="h4 fw-bold mb-4 text-center">Why More Patients Choose <br/>Telemedicine in Florida</h2>
+      <p class="text-center fs-4 fw-bold text-muted mb-4">Most patients turn to telemedicine for four main reasons:</p>
+
+      <div id="teleReasonCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner pb-3">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <TeleReasonCard 
+                number="1"
+                title="Convenience without sacrificing quality"
+                text="With telemedicine, you save time, avoid traffic, and receive medical care exactly when you need it. No waiting rooms. No rushed visits. No barriers."
+                aos="fade-up"
+                
+              />
+              <TeleReasonCard 
+                number="2"
+                title="Real doctors, real attention"
+                text="Some people wonder if telemedicine in Florida is as trustworthy as in-person visits. The answer is yes when it is done correctly. Our service is performed by trained medical professionals who understand both the science and the human side of care."
+                aos="fade-up"
+                aosDelay="200"
+              />
+              <TeleReasonCard 
+                number="3"
+                title="Emotional comfort from home"
+                text="For many patients, being at home helps them feel calmer, safer, and more understood. Telemedicine lets you connect with your doctor in a familiar environment."
+                aos="fade-up"
+                aosDelay="400"
+              />
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <TeleReasonCard 
+                number="4"
+                title="Bilingual access"
+                text="Our telemedicine visits can be done in English or Spanish, offering clarity and comfort to communities across the state."
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center gap-2 mt-3">
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-target="#teleReasonCarousel" data-bs-slide="prev">Prev</button>
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-target="#teleReasonCarousel" data-bs-slide="next">Next</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Treat Through Telemedicine -->
+    <section class="bg-primary-subtle py-4">
+  <div class="container">
+    <div class="text-center mb-4">
+      <h2 class="h5 fw-bold mb-3">What We Treat Through Telemedicine</h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="list-unstyled mb-3">
+              <li class="mb-2" data-aos="fade-right" data-aos-delay="0"><img src={rButtonBlue.src} class="me-3">Weight management</li>
+              <li class="mb-2" data-aos="fade-right" data-aos-delay="100"><img src={rButtonBlue.src} class="me-3">Medication follow-ups</li>
+              <li class="mb-2" data-aos="fade-right" data-aos-delay="200"><img src={rButtonBlue.src} class="me-3">Non-emergency consultations</li>
+              <li class="mb-2" data-aos="fade-right" data-aos-delay="300"><img src={rButtonBlue.src} class="me-3">General virtual check-ups</li>
+              <li class="mb-2" data-aos="fade-right" data-aos-delay="400"><img src={rButtonBlue.src} class="me-3">Treatment adjustments</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-unstyled mb-3">
+              <li class="mb-2" data-aos="fade-right" data-aos-delay="500"><img src={rButtonBlue.src} class="me-3">Wellness evaluations</li>
+              <li class="mb-2" data-aos="fade-right" data-aos-delay="600"><img src={rButtonBlue.src} class="me-3">Lab result analysis</li>
+              <li class="mb-2" data-aos="fade-right" data-aos-delay="700"><img src={rButtonBlue.src} class="me-3">Lifestyle and preventive medicine</li>
+              <li class="mb-2" data-aos="fade-right" data-aos-delay="800"><img src={rButtonBlue.src} class="me-3">Symptom concerns</li>
+            </ul>
+          </div>
+        </div>
+        <p class="fw-semibold mb-0" data-aos="fade-right">Each appointment is guided by empathy, precision, and clarity.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Online Medical Visits Florida: How It Works -->
+    <section class="container py-4">
+        <div class="text-center mb-4">
+            <h2 class="h5 fw-bold mb-2">Online Medical Visits Florida: How It Works</h2>
+            <p class="text-muted mb-0">
+            The process for online medical visits Florida is simple and designed with your comfort in mind.
+            </p>
+        </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-6">
+          <div class="position-relative ps-4">
+            <!-- Vertical line -->
+            <div class="position-absolute top-0 bottom-0 start-0 border-vline" data-aos="fade-right" data-aos-delay="500"></div>
+
+            <!-- Step 1 -->
+            <div class="d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="0">
+              <div class="me-3 mt-1">
+                <img src={rButtonBlue.src} width="18" height="18" alt="Step marker" />
+              </div>
+              <div class="flex-grow-1">
+                <div class="border rounded-pill px-4 py-2 text-center fw-semibold">
+                  Book your appointment
+                </div>
+                <p class="text-center text-muted mt-2 mb-0">
+                  Schedule directly through our portal.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="150">
+              <div class="me-3 mt-1">
+                <img src={rButtonBlue.src} width="18" height="18" alt="Step marker" />
+              </div>
+              <div class="flex-grow-1">
+                <div class="border rounded-pill px-4 py-2 text-center fw-semibold">
+                  Connect with your provider
+                </div>
+                <p class="text-center text-muted mt-2 mb-0">
+                  Your online medical visits appointment happens via secure, HIPAA-compliant video.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="me-3 mt-1">
+                <img src={rButtonBlue.src} width="18" height="18" alt="Step marker" />
+              </div>
+              <div class="flex-grow-1">
+                <div class="border rounded-pill px-4 py-2 text-center fw-semibold">
+                  Receive guidance, treatment, or orders
+                </div>
+                <p class="text-center text-muted mt-2 mb-0">
+                  We provide lab orders, treatment plans, medication follow-ups, and everything needed for your care.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="d-flex align-items-start" data-aos="fade-up" data-aos-delay="450">
+              <div class="me-3 mt-1">
+                <img src={rButtonBlue.src} width="18" height="18" alt="Step marker" />
+              </div>
+              <div class="flex-grow-1">
+                <div class="border rounded-pill px-4 py-2 text-center fw-semibold">
+                  Follow-up and continuity
+                </div>
+                <p class="text-center text-muted mt-2 mb-0">
+                  Your provider is available for ongoing support whenever needed.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Is Telemedicine Safe? -->
+    <section class="container py-4">
+      <h2 class="h5 fw-bold mb-3">Is Telemedicine Safe?</h2>
+
+      <div class="border rounded-4 p-4">
+        <div class="row text-center justify-content-center g-4">
+          <div class="col-6 col-md-3" data-aos="fade-up">
+            <img src="/img/home/info2.png" class="img-fluid mb-0" alt="Icon 2" width="80" height="80">
+            <div class="fw-semibold small">HIPAA-compliant</div>
+          </div>
+
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="200">
+            <img src="/img/telemedicine/fingerprint.svg" class="img-fluid mb-0" alt="Icon 2" width="80" height="80">
+            <div class="fw-semibold small">Securely encrypted</div>
+          </div>
+
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="400">
+            <img src="/img/telemedicine/person.svg" class="img-fluid mb-0" alt="Icon 2" width="80" height="80">
+            <div class="fw-semibold small">Conducted by trained medical professionals</div>
+          </div>
+
+          <div class="col-6 col-md-3" data-aos="fade-up" data-aos-delay="600">
+            <img src="/img/telemedicine/cross.svg" class="img-fluid mb-0" alt="Icon 2" width="80" height="80">
+            <div class="fw-semibold small">Compatible with Florida telehealth regulations</div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center fw-semibold mt-3 mb-0">Your privacy and safety always come first.</p>
+    </section>
+
+    <!-- FAQs -->
+    <section class="container py-4">
+      <h2 class="h5 fw-bold mb-3 text-center">FAQs</h2>
+      <div class="row g-3 justify-content-center">
+        <FAQItem 
+          question="Is telemedicine in Florida as effective as in-person care?" 
+          answer="Yes. For non-emergency concerns, telemedicine is equally effective and often more convenient."
+          id="faqEffective"
+          parentId="faqAccordionCol1"
+          aos="flip-left"
+          aosDelay="0"
+        />
+        <FAQItem 
+          question="Do I need special equipment?" 
+          answer="No. A smartphone or computer with internet is enough."
+          id="faqEquipment"
+          parentId="faqAccordionCol2"
+          aos="flip-left"
+          aosDelay="200"
+        />
+        <FAQItem 
+          question="Can I get lab orders through telemedicine Florida?" 
+          answer="Yes, our provider can send electronic orders instantly."
+          id="faqLabs"
+          parentId="faqAccordionCol3"
+          aos="flip-left"
+          aosDelay="400"
+        />
+        <FAQItem 
+          question="Do you offer telemedicine Tampa visits in Spanish?" 
+          answer="Yes. We offer bilingual support."
+          id="faqSpanish"
+          parentId="faqAccordionCol4"
+          aos="flip-left"
+          aosDelay="600"
+        />
+      </div>
+    </section>
+
+  </main>
+  <footer>
+    <Footer />
+  </footer>
+</Layout>

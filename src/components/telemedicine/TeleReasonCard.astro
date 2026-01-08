@@ -1,0 +1,20 @@
+---
+const { number, title, text, aos = "", aosDelay = "" } = Astro.props;
+---
+<style>
+
+
+</style>
+<div class="col-md-4 mb-3">
+  <div class="card border-0 shadow-sm h-100"
+    data-aos={aos}
+    data-aos-delay={aosDelay}>
+    <div class="card-body">
+      <div class="fw-bold fs-2 mb-3">
+        <span class="blue-card-bg rounded-circle px-3 py-1">{number}</span>
+      </div>
+      <h5 class="fw-bold blue-card mb-3">{title}</h5>
+      <p class="fs-6 mb-0">{text}</p>
+    </div>
+  </div>
+</div>

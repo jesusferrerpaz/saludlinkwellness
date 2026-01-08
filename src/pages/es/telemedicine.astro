@@ -1,0 +1,245 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FAQItem from '../../components/FAQItem.astro';
+import TeleReasonCard from '../../components/telemedicine/TeleReasonCard.astro';
+import rButtonBlue from '../../assets/icons/rbutton_blue.svg';
+---
+<Layout
+  lang="es"
+  title="Telemedicina Florida | Telehealth Tampa y Atención primaria en línea"
+  metaDescription="Telemedicina Florida con profesionales licenciados. Telehealth Tampa y Telehealth Florida: visitas médicas virtuales, seguimiento y atención primaria en línea con soporte bilingüe."
+>
+  <Header lang="es" />
+  <main>
+    <!-- Hero Section -->
+    <section class="container py-5 mt-5">
+      <div class="row">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <div class="col-md-10 col-12">
+            <h1 class="display-4 fw-bold mb-3">Telemedicina en Florida</h1>
+            <p class="fs-5 fw-semibold mb-4">Atención humana, moderna y accesible desde donde estés.</p>
+            <a
+              href="https://www.optimantra.com/optimus/patient/patientaccess/modalities?pid=aW9kcWFMNis2blNxN1Q1M0U1MHc2QT09&lid=RGI5R2o0cVJ0UXo1OEdueE9lYy9sZz09"
+              target="_blank"
+              class="btn btn-primary rounded-pill px-4 py-2 fw-semibold mb-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              >Agendar visita de Telehealth</a
+            >
+            <p class="text-muted mb-0">
+              Si buscas <strong>Telehealth Tampa</strong> o <strong>Telehealth Florida</strong>, aquí encuentras continuidad, claridad y apoyo bilingüe.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center" data-aos="fade-left">
+          <img src="/img/telemedicine/hero-tele.webp" class="img-fluid rounded-4 shadow-sm" alt="Médico por telemedicina" style="max-width:400px;" />
+        </div>
+      </div>
+    </section>
+
+    <!-- What Telemedicine Means Today -->
+    <section class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-md-5 mb-4 mb-md-0">
+          <h2 class="h4 fw-bold mb-3">Qué significa hoy la Telemedicina en Florida</h2>
+          <img src="/img/telemedicine/FloridaSign.webp" class="img-fluid rounded-4 shadow-sm" alt="Bienvenido a Florida" data-aos="fade-right" />
+        </div>
+        <div class="col-md-7">
+          <p class="mt-5">
+            La <strong>Telemedicina Florida</strong> cambió la forma de acceder a servicios de salud. En lugar de esperar en clínicas llenas o manejar largas distancias,
+            puedes recibir atención segura y personalizada desde casa.
+          </p>
+          <p>
+            Muchas personas eligen telehealth por conveniencia, accesibilidad y empatía: tres pilares que cuidamos en cada cita.
+          </p>
+          <p>
+            En SaludLink &amp; Wellness, nuestro enfoque busca algo simple: llevarte atención confiable, sin importar dónde vivas en el estado.
+          </p>
+          <p>
+            Ya sea que estés en Tampa, Orlando, Miami, Jacksonville u otra ciudad, podrás hablar con un profesional real que escucha, evalúa, explica y guía con claridad.
+          </p>
+          <p class="mb-0">
+            Porque la salud debe adaptarse a tu vida, no al revés.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why More Patients Choose Telemedicine -->
+    <section class="container py-4">
+      <h2 class="h4 fw-bold mb-4 text-center">Por qué más pacientes eligen<br />Telemedicina en Florida</h2>
+      <p class="text-center fs-4 fw-bold text-muted mb-4">Cuatro razones principales:</p>
+
+      <div id="teleReasonCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner pb-3">
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <TeleReasonCard
+                number="1"
+                title="Comodidad sin perder calidad"
+                text="Ahorras tiempo, evitas tráfico y recibes atención cuando la necesitas. Sin sala de espera. Sin prisa."
+                aos="fade-up"
+              />
+              <TeleReasonCard
+                number="2"
+                title="Atención real, con profesionales reales"
+                text="La telemedicina es efectiva cuando se hace bien. Nuestro servicio lo realizan profesionales entrenados con enfoque clínico y humano."
+                aos="fade-up"
+                aosDelay="200"
+              />
+              <TeleReasonCard
+                number="3"
+                title="Tranquilidad desde casa"
+                text="Para muchas personas, estar en casa reduce el estrés. Telehealth te conecta en un entorno familiar."
+                aos="fade-up"
+                aosDelay="400"
+              />
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <TeleReasonCard
+                number="4"
+                title="Acceso bilingüe"
+                text="Las visitas pueden ser en español o inglés para asegurar comprensión y confianza."
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-center gap-2 mt-3">
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-target="#teleReasonCarousel" data-bs-slide="prev">Anterior</button>
+          <button class="btn btn-outline-primary btn-sm" type="button" data-bs-target="#teleReasonCarousel" data-bs-slide="next">Siguiente</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Treat Through Telemedicine -->
+    <section class="bg-primary-subtle py-4">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="h5 fw-bold mb-3">Qué atendemos por Telehealth</h2>
+          <p class="text-muted mb-0">Atención primaria en línea y seguimientos.</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-md-6">
+                <ul class="list-unstyled mb-3">
+                  <li class="mb-2" data-aos="fade-right" data-aos-delay="0"><img src={rButtonBlue.src} class="me-3" alt="" />Control de peso</li>
+                  <li class="mb-2" data-aos="fade-right" data-aos-delay="100"><img src={rButtonBlue.src} class="me-3" alt="" />Seguimiento de medicamentos</li>
+                  <li class="mb-2" data-aos="fade-right" data-aos-delay="200"><img src={rButtonBlue.src} class="me-3" alt="" />Consultas no emergentes</li>
+                  <li class="mb-2" data-aos="fade-right" data-aos-delay="300"><img src={rButtonBlue.src} class="me-3" alt="" />Chequeos generales virtuales</li>
+                  <li class="mb-2" data-aos="fade-right" data-aos-delay="400"><img src={rButtonBlue.src} class="me-3" alt="" />Ajustes de tratamiento</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-unstyled mb-3">
+                  <li class="mb-2" data-aos="fade-right" data-aos-delay="500"><img src={rButtonBlue.src} class="me-3" alt="" />Evaluación de bienestar</li>
+                  <li class="mb-2" data-aos="fade-right" data-aos-delay="600"><img src={rButtonBlue.src} class="me-3" alt="" />Análisis de resultados de laboratorio</li>
+                  <li class="mb-2" data-aos="fade-right" data-aos-delay="700"><img src={rButtonBlue.src} class="me-3" alt="" />Prevención y estilo de vida</li>
+                  <li class="mb-2" data-aos="fade-right" data-aos-delay="800"><img src={rButtonBlue.src} class="me-3" alt="" />Síntomas y dudas</li>
+                </ul>
+              </div>
+            </div>
+            <p class="fw-semibold mb-0" data-aos="fade-right">Cada cita se guía con empatía, precisión y claridad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Online Medical Visits Florida: How It Works -->
+    <section class="container py-4">
+      <div class="text-center mb-4">
+        <h2 class="h5 fw-bold mb-2">Cómo funciona una visita médica virtual</h2>
+        <p class="text-muted mb-0">Proceso simple y diseñado para tu comodidad.</p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-6">
+          <div class="position-relative ps-4">
+            <div class="position-absolute top-0 bottom-0 start-0 border-vline" data-aos="fade-right" data-aos-delay="500"></div>
+
+            <div class="d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="0">
+              <div class="me-3 mt-1">
+                <img src={rButtonBlue.src} width="18" height="18" alt="Marcador" />
+              </div>
+              <div class="flex-grow-1">
+                <div class="border rounded-pill px-4 py-2 text-center fw-semibold">Agenda tu cita</div>
+                <p class="text-center text-muted mt-2 mb-0">Reserva directamente desde nuestro portal.</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="150">
+              <div class="me-3 mt-1">
+                <img src={rButtonBlue.src} width="18" height="18" alt="Marcador" />
+              </div>
+              <div class="flex-grow-1">
+                <div class="border rounded-pill px-4 py-2 text-center fw-semibold">Conéctate con tu proveedor</div>
+                <p class="text-center text-muted mt-2 mb-0">Tu teleconsulta ocurre por video seguro compatible con HIPAA.</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="me-3 mt-1">
+                <img src={rButtonBlue.src} width="18" height="18" alt="Marcador" />
+              </div>
+              <div class="flex-grow-1">
+                <div class="border rounded-pill px-4 py-2 text-center fw-semibold">Recibe guía y órdenes</div>
+                <p class="text-center text-muted mt-2 mb-0">Órdenes de laboratorio, planes y seguimientos según tu caso.</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start" data-aos="fade-up" data-aos-delay="450">
+              <div class="me-3 mt-1">
+                <img src={rButtonBlue.src} width="18" height="18" alt="Marcador" />
+              </div>
+              <div class="flex-grow-1">
+                <div class="border rounded-pill px-4 py-2 text-center fw-semibold">Continuidad</div>
+                <p class="text-center text-muted mt-2 mb-0">Acompañamiento cuando lo necesites.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="container py-4">
+      <h2 class="h5 fw-bold mb-3 text-center">Preguntas frecuentes</h2>
+      <div class="row g-3 justify-content-center">
+        <FAQItem
+          question="¿La telemedicina es tan efectiva como una visita presencial?"
+          answer="En muchos casos sí. Depende del motivo de consulta. Te orientamos con claridad y, si hace falta, te indicamos la mejor alternativa."
+          id="faqEffectivenessEs"
+          parentId="faqAccordionCol1"
+          aos="flip-left"
+          aosDelay="0"
+        />
+        <FAQItem
+          question="¿Atienden en español?"
+          answer="Sí. Ofrecemos soporte bilingüe (español/inglés) para que te sientas en confianza."
+          id="faqSpanishEs"
+          parentId="faqAccordionCol2"
+          aos="flip-left"
+          aosDelay="150"
+        />
+        <FAQItem
+          question="¿Es seguro hacer Telehealth?"
+          answer="Sí. Usamos plataformas seguras y prácticas compatibles con HIPAA."
+          id="faqSecureEs"
+          parentId="faqAccordionCol3"
+          aos="flip-left"
+          aosDelay="300"
+        />
+      </div>
+    </section>
+
+    <footer>
+      <Footer />
+    </footer>
+  </main>
+</Layout>

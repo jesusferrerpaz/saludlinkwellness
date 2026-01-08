@@ -1,0 +1,117 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import WeSupportCard from '../../components/home/WeSupportCard.astro';
+---
+<Layout
+  lang="es"
+  title="Sobre Nosotros | Telemedicina Florida y Ultrasonidos en Tampa"
+  metaDescription="Conoce SaludLink & Wellness: Telemedicina Florida (Telehealth Tampa) y ultrasonido para embarazadas en Tampa con atención bilingüe, humana y clara."
+>
+  <Header lang="es" />
+  <main>
+    <section class="text-white py-5" style="background: #3b6ab0;" data-aos="fade-up">
+      <div class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h1 class="display-5 fw-bold mb-3">Sobre Nosotros</h1>
+            <p class="lead mb-0">Donde la salud se siente humana, la tecnología se siente amable y cada historia importa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" data-aos="fade-up">
+      <div class="container">
+        <h2 class="h3 fw-bold mb-4">Quiénes somos</h2>
+        <div class="row">
+          <div class="col-lg-10">
+            <p class="mb-3">
+              En SaludLink &amp; Wellness creemos que la atención médica debe ser cálida, clara y profundamente humana.
+              Por eso creamos un espacio donde la tecnología se une con el trato cercano: <strong>Telemedicina Florida</strong> y
+              ultrasonido electivo en Tampa.
+            </p>
+            <p class="mb-0">
+              Estamos para pacientes que valoran la claridad, la compasión y la continuidad: desde una cita de
+              <strong>Telehealth Tampa</strong> hasta una sesión de <strong>ultrasonido para embarazadas en Tampa</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-primary-subtle" data-aos="fade-up">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-7">
+            <span class="badge rounded-0 px-3 py-2 mb-3" style="background: #3b6ab0;">Conoce a la Dra. Eloika</span>
+            <p class="mb-3">
+              Detrás de cada visión hay una historia. La nuestra comienza con la Dra. Eloika: una profesional que combina resiliencia,
+              propósito y amor por servir.
+            </p>
+            <p class="mb-0">
+              Antes de fundar SaludLink &amp; Wellness, observó una realidad común: atención apresurada, distante o desconectada.
+              Su objetivo fue claro: más empatía, más explicación y más acompañamiento, ya sea en telemedicina o en ultrasonido.
+            </p>
+          </div>
+          <div class="col-md-5" data-aos="fade-left">
+            <img src="/img/about/Meet.JPG" class="img-fluid rounded-4 shadow-sm w-100" alt="Dra. Eloika en consulta" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light" data-aos="fade-up">
+      <div class="container">
+        <div class="row g-4 align-items-start">
+          <div class="col-md-4" data-aos="fade-right">
+            <img src="/img/about/Eloika.webp" class="img-fluid rounded-4 shadow-sm w-100" alt="Momento de atención" width="500px" />
+          </div>
+          <div class="col-md-7 ms-4">
+            <h3 class="h5 color-primary-subtle fw-bold mb-2">Una profesional que escucha antes de concluir</h3>
+            <p class="mb-5 pe-5">En <strong>atención primaria en línea</strong>, la presencia y la claridad importan tanto como el tratamiento.</p>
+
+            <h3 class="h5 color-primary-subtle fw-bold mb-2">Una experiencia prenatal con emoción y cuidado</h3>
+            <p class="mb-5 pe-5">
+              Las familias que buscan <strong>Ultrasonido 3D en Tampa</strong> o <strong>Ultrasonido 4D en Tampa</strong> encuentran un enfoque calmado y explicado.
+            </p>
+
+            <h3 class="h5 color-primary-subtle fw-bold mb-2">Atención bilingüe que construye confianza</h3>
+            <p class="mb-5 pe-5">Español e inglés para asegurar comprensión, respeto cultural y tranquilidad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5" data-aos="fade-up">
+      <div class="container">
+        <h2 class="h4 fw-bold text-center mb-4">Por qué existimos</h2>
+
+        <div class="row g-3 justify-content-center text-center">
+          <div class="col-12 col-md-4" data-aos="flip-left">
+            <WeSupportCard text="La salud no debería sentirse abrumadora." />
+          </div>
+          <div class="col-12 col-md-4" data-aos="flip-left" data-aos-delay="200">
+            <WeSupportCard text="Las familias no deberían sentirse apresuradas." />
+          </div>
+          <div class="col-12 col-md-4" data-aos="flip-left" data-aos-delay="400">
+            <WeSupportCard text="Los pacientes no deberían sentirse ignorados." />
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-lg-10">
+            <h3 class="text-secondary fw-semibold fs-4 mb-3">SaludLink &amp; Wellness existe para cambiar esa realidad.</h3>
+            <p class="mb-0">
+              Desde <strong>Telemedicina Florida</strong> (Telehealth) hasta ultrasonidos electivos en Tampa, buscamos que cada persona se sienta vista, escuchada y acompañada.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <Footer />
+  </footer>
+</Layout>

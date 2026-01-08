@@ -1,0 +1,128 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/Header.astro";
+import Footer from "../../components/Footer.astro";
+---
+
+<Layout
+  lang="es"
+  title="Contacto | Ultrasonido para embarazadas en Tampa y Telemedicina Florida"
+  metaDescription="Contáctanos para agendar ultrasonido 3D/4D/8K en Tampa o Telehealth Florida. Atención primaria en línea con soporte bilingüe."
+>
+  <Header lang="es" />
+  <main>
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h1 class="h3 fw-bold mb-4">¿Lista para comenzar?</h1>
+        <p class="text-muted">Estamos aquí para cuidarte, donde estés.</p>
+
+        <div class="row gy-4 align-items-center">
+          <div class="col-12 col-lg-8">
+            <form class="row g-3 needs-validation" novalidate>
+              <div class="col-12 col-md-6">
+                <label for="name" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Tu nombre"
+                  autocomplete="name"
+                  required
+                />
+                <div class="invalid-feedback">Por favor escribe tu nombre.</div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="phone" class="form-label">Teléfono</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  placeholder="(###) ###-####"
+                  inputmode="tel"
+                  autocomplete="tel"
+                  required
+                />
+                <div class="invalid-feedback">Por favor escribe tu número de teléfono.</div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="zip" class="form-label">ZIP / Código postal</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="zip"
+                  name="zip"
+                  placeholder="ZIP"
+                  autocomplete="postal-code"
+                  required
+                />
+                <div class="invalid-feedback">Por favor escribe tu ZIP / código postal.</div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="weeks" class="form-label">¿Cuántas semanas tienes?</label>
+                <select class="form-select" id="weeks" name="weeks" required>
+                  <option value="">Selecciona</option>
+                  <option value="0-8">0-8 semanas</option>
+                  <option value="9-16">9-16 semanas</option>
+                  <option value="17-24">17-24 semanas</option>
+                  <option value="25-32">25-32 semanas</option>
+                  <option value="33+">33+ semanas</option>
+                </select>
+                <div class="invalid-feedback">Por favor selecciona una opción.</div>
+              </div>
+
+              <div class="col-12">
+                <label for="notes" class="form-label">Notas</label>
+                <textarea
+                  class="form-control"
+                  id="notes"
+                  name="notes"
+                  rows="4"
+                  placeholder="Escribe tus notas o preferencias"
+                ></textarea>
+              </div>
+
+              <div class="col-12 mt-2">
+                <div class="d-grid d-md-flex justify-content-md-start">
+                  <button type="submit" class="btn btn-outline-primary rounded-pill fs-6 w-50">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center h-100 mt-4 mt-lg-0">
+            <div class="d-flex flex-column gap-2 w-100">
+              <a
+                href="https://www.optimantra.com/optimus/patient/patientaccess/modalities?pid=aW9kcWFMNis2blNxN1Q1M0U1MHc2QT09&lid=RGI5R2o0cVJ0UXo1OEdueE9lYy9sZz09"
+                target="_blank"
+                class="btn btn-primary rounded-pill fs-5 w-100"
+                >Agendar ultrasonido</a
+              >
+              <a
+                href="https://www.optimantra.com/optimus/om/patient/login?accessPoint=VVFaSGFUcmJvS1dGcU1XODFyQlJVdz09"
+                target="_blank"
+                class="btn btn-outline-primary rounded-pill fs-5 w-100"
+                >Iniciar Telehealth</a
+              >
+              <a
+                href="https://www.optimantra.com/optimus/patient/patientaccess/onlinegiftcard?pid=dmt1UGpEVm9JVElLSG1vajgxVXRxUT09"
+                target="_blank"
+                class="btn btn-primary rounded-pill fs-5"
+                >Comprar Gift Card</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <p class="text-muted mt-4 mb-0">
+          Podemos ayudarte con <strong>Telemedicina Florida</strong> (Telehealth) y con ultrasonidos electivos en Tampa, incluyendo 3D/4D y mejora a 8K.
+        </p>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>

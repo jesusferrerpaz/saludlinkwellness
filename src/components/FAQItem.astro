@@ -1,0 +1,27 @@
+---
+const { question, answer, id, parentId, aos, aosDelay } = Astro.props;
+---
+
+<div class="col-12 col-md-6 col-lg-5" data-aos={aos} data-aos-delay={aosDelay}>
+  <div class="accordion" id={parentId}>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button
+          class="accordion-button collapsed text-center"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target={`#${id}`}
+          aria-expanded="false"
+          aria-controls={id}
+        >
+          <span class="flex-grow-1 text-center">{question}</span>
+        </button>
+      </h2>
+      <div id={id} class="accordion-collapse collapse" data-bs-parent={`#${parentId}`}>
+        <div class="accordion-body text-center">
+          {answer}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

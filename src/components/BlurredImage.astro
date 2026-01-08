@@ -1,0 +1,38 @@
+---
+// filepath: src/components/BlurredImage.astro
+const { src, alt = "", className = "", style = "", blurColor, blurHeight, blurWidth, rounded = false, borderRadius } = Astro.props;
+const gradient =
+  blurColor ||
+  "radial-gradient(ellipse at center, #b3e5fc 0%, #43bcff 60%, rgba(67, 188, 255, 0.12) 100%)";
+const height = blurHeight || "75%";
+const width = blurWidth || "100%";
+const roundedClass = rounded ? "rounded-circle" : "";
+// Lógica para el border-radius del blur
+const blurBorderRadius = borderRadius ? `border-radius: ${borderRadius};` : "border-radius: 0%;";
+---
+
+<div class="key-metrics-img-container position-relative d-inline-block" style={style}>
+  <span
+    class="blur-bg"
+    style={`background: ${gradient}; height: ${height}; width: ${width}; ${blurBorderRadius}`}
+  ></span>
+  <img src={src} alt={alt} class={`img-fluid ${roundedClass} ${className}`} style="position: relative; z-index: 1; width: 100%;" />
+</div>
+
+<style>
+.key-metrics-img-container {
+  position: relative;
+  display: inline-block;
+}
+.key-metrics-img-container .blur-bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  /*border-radius: 100%;*/
+  opacity: 0.65;
+  filter: blur(32px);
+  pointer-events: none;
+  display: block;
+}
+</style>

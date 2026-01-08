@@ -1,0 +1,28 @@
+---
+// filepath: src/components/WeSupportCard.astro
+const { text } = Astro.props;
+---
+<style>
+  .card {
+    
+    background-color: #3b6ab0;
+    min-height: 100px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    transform: scale(0.97);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+    
+  }
+
+</style>
+
+<div class="card text-white h-100 text-center">
+  <div class="card-body d-flex align-items-center justify-content-center">
+    <span class="fw-semibold">{text}</span>
+  </div>
+</div>

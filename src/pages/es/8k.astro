@@ -1,0 +1,210 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import FAQItem from '../../components/FAQItem.astro';
+import Dcards from '../../components/8k/DCards.astro';
+import rButtonLBlue from '../../assets/icons/rbutton_lblue.svg';
+import rButtonBlue from '../../assets/icons/rbutton_blue.svg';
+import rButtonYellow from '../../assets/icons/rbutton_yellow.svg';
+---
+
+<Layout
+  lang="es"
+  title="Ultrasonido 8K en Tampa | 8K foto bebé desde ultrasonido 4D"
+  metaDescription="Ultrasonido 8K en Tampa: convierte tu ultrasonido 4D en una 8K foto bebé hiperrealista. Experiencia electiva (no diagnóstica) y bilingüe."
+>
+  <Header lang="es" />
+  <main>
+    <!-- Hero -->
+    <section class="position-relative text-white" aria-label="Hero" style="min-height:420px;" data-aos="fade-up">
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100"
+        style="background-image: url('/img/8k/baby_hero_background.webp'); background-size: cover; background-position: center; background-repeat: no-repeat; filter: brightness(0.55);"
+      ></div>
+
+      <div class="container position-relative py-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <h1 class="display-4 fw-bold mb-3">De ultrasonido 4D<br />a 8K foto bebé</h1>
+            <p class="lead fs-4 fw-semibold mb-3">Emocional. Hermoso. Inolvidable. Una primera conexión con tu bebé.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a
+                href="https://www.optimantra.com/optimus/patient/patientaccess/modalities?pid=aW9kcWFMNis2blNxN1Q1M0U1MHc2QT09&lid=RGI5R2o0cVJ0UXo1OEdueE9lYy9zZz09"
+                target="_blank"
+                class="btn btn-warning rounded-pill text-white fw-semibold px-4"
+                >Agendar ultrasonido</a
+              >
+            </div>
+            <!--<p class="text-white-50 mt-3 mb-0">
+              Si buscas <strong>Ultrasonido 8K en Tampa</strong> o una <strong>8K foto bebé</strong> realista, esta experiencia es para ti.
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="py-5" data-aos="fade-up">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-md-6">
+            <p class="fs-5 mb-3">
+              Nuestros ultrasonidos electivos están diseñados para ayudar a las familias a conectar con su bebé en un ambiente seguro, cálido y no diagnóstico.
+            </p>
+            <p class="fs-5 mb-3">
+              En SaludLink &amp; Wellness, las sesiones 2D, 3D y 4D están guiadas por profesionales que combinan empatía, claridad y un enfoque de cuidado.
+              No son exámenes médicos: son momentos familiares.
+            </p>
+            <p class="fs-5 mb-0">
+              La mejora a 8K transforma imágenes seleccionadas de tu sesión 3D/4D en un retrato hiperrealista.
+            </p>
+          </div>
+          <div class="col-md-6 justify-content-center d-flex">
+            <img src="/img/8k/Intro_right.webp" alt="Ultrasonido familiar" class="img-fluid rounded-4" width="450px" data-aos="fade-left" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Buttons -->
+    <section id="experience" class="py-5" data-aos="fade-up">
+      <div class="container text-center">
+        <h2 class="fw-semibold mb-4">Ofrecemos una experiencia electiva completa:</h2>
+        <div class="d-inline-flex justify-content-center rounded-4 gap-0 flex-wrap" style="background: #caa33c;">
+          <span class="text-white fw-semibold rounded-4 px-5 py-4 fs-5" style="background: #aa8626;">Ultrasonido 2D</span>
+          <span class="text-white fw-semibold rounded-0 px-5 py-4 fs-5">Ultrasonido 3D</span>
+          <span class="text-white fw-semibold rounded-4 px-5 py-4 fs-5" style="background: #aa8626;">Ultrasonido 4D</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing / Packages -->
+    <section id="pricing" class="py-5 mb-5" data-aos="fade-up">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <p class="text-center fs-5 mb-5">Cada sesión puede realizarse en español o inglés para asegurar claridad y comodidad.</p>
+
+          <div class="col-12 col-lg-4 mb-5 mb-lg-0" data-aos="flip-left" data-aos-delay="0">
+            <Dcards
+              containerClass="shadow-light-blue-gradient"
+              title="2D"
+              titleClass="text-light-blue-gradient"
+              subtitle="Ultrasonido: tu primera mirada emocional"
+              description="Una sesión 2D te permite ver movimientos en tiempo real: pataditas, estiramientos o quietud, en una experiencia cálida y no diagnóstica."
+              highlight="Perfecto para:"
+              highlightClass="light-blue-gradient"
+              icon={rButtonLBlue}
+              features={[
+                { text: "Primeros momentos de vínculo" },
+                { text: "Familias que quieren un vistazo simple y bonito" },
+                { text: "Quienes prefieren el estilo clásico" },
+                { text: "Preparación para 3D o 4D" },
+                { text: "Opciones electivas accesibles" }
+              ]}
+              footerText="En nuestro estudio, el ultrasonido 2D es conexión emocional, no un examen clínico."
+              buttonText="Reservar"
+            />
+          </div>
+
+          <div class="col-12 col-lg-4 mb-5 mb-lg-0" data-aos="flip-left" data-aos-delay="150">
+            <Dcards
+              containerClass="shadow-blue-gradient"
+              title="3D"
+              titleClass="text-blue-gradient"
+              subtitle="Ultrasonido 3D en Tampa: rasgos con más detalle"
+              description="El ultrasonido 3D permite ver rasgos faciales y detalles con mayor definición, ideal para familias que quieren una imagen más realista."
+              highlight="A las familias les encanta porque captura:"
+              highlightClass="blue-gradient"
+              icon={rButtonBlue}
+              features={[
+                { text: "Mejillas" },
+                { text: "Forma de la nariz" },
+                { text: "Manitas" },
+                { text: "Perfil al dormir" },
+                { text: "Expresiones" }
+              ]}
+              footerText="Nuestras sesiones electivas crean un primer vistazo emocional mucho antes del nacimiento."
+              buttonText="Reservar"
+            />
+          </div>
+
+          <div class="col-12 col-lg-4 mb-5 mb-lg-0" data-aos="flip-left" data-aos-delay="300">
+            <Dcards
+              containerClass="shadow-golden-gradient"
+              title="4D"
+              titleClass="text-golden-gradient"
+              subtitle="Ultrasonido 4D en Tampa: movimiento en tiempo real"
+              description="El ultrasonido 4D suma movimiento y personalidad. Esta experiencia electiva permite ver bostezos, estiramientos y gestos."
+              textColor="text-dark-golden fw-bold"
+              highlight="A las familias les encanta porque captura:"
+              highlightClass="golden-gradient"
+              icon={rButtonYellow}
+              features={[
+                { text: "Bostezos" },
+                { text: "Estiramientos" },
+                { text: "Pataditas" },
+                { text: "Movimientos" },
+                { text: "Gestos" },
+                { text: "Expresiones" }
+              ]}
+              footerText="Un ambiente cálido ayuda a vivir la magia del 4D sin tensión clínica."
+              buttonText="Reservar"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="py-5" data-aos="fade-up">
+      <div class="container">
+        <h2 class="h4 fw-bold text-center mb-4">Preguntas frecuentes</h2>
+        <div class="row g-3 justify-content-center">
+          <FAQItem
+            question="¿La mejora 8K es segura?"
+            answer="Sí. Se realiza usando imágenes de tu sesión, sin necesidad de un nuevo ultrasonido."
+            id="faqSafe8kEs"
+            parentId="faqAccordionCol1"
+            aos="flip-left"
+            aosDelay="0"
+          />
+          <FAQItem
+            question="¿Es un servicio diagnóstico?"
+            answer="No. La imagen 8K es un servicio electivo enfocado en la experiencia emocional."
+            id="faqDiagnostic8kEs"
+            parentId="faqAccordionCol2"
+            aos="flip-left"
+            aosDelay="150"
+          />
+          <FAQItem
+            question="¿Puedo hacer la sesión en español?"
+            answer="Sí. Atendemos en español o inglés para tu tranquilidad."
+            id="faqLanguage8kEs"
+            parentId="faqAccordionCol3"
+            aos="flip-left"
+            aosDelay="300"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-5" data-aos="fade-up">
+      <div class="container">
+        <div class="text-center">
+          <h3 class="h5 fw-bold mb-3">Reserva tu ultrasonido electivo en Tampa</h3>
+          <a
+            href="https://www.optimantra.com/optimus/patient/patientaccess/modalities?pid=aW9kcWFMNis2blNxN1Q1M0U1MHc2QT09&lid=RGI5R2o0cVJ0UXo1OEdueE9lYy9sZz09"
+            target="_blank"
+            class="btn btn-outline-primary rounded-pill px-5 fs-6 fw-semibold"
+            >Reservar</a
+          >
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <Footer />
+  </footer>
+</Layout>

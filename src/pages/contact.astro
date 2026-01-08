@@ -1,0 +1,116 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout
+  title="Contact SaludLink & Wellness | Telemedicine and Ultrasound in Tampa"
+  metaDescription="Get in touch with SaludLink & Wellness to book telemedicine consultations or ultrasound services in Tampa and Central Florida. Personalized, bilingual medical care."
+>
+  <Header />
+  <main>
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="h3 fw-bold mb-4">Ready to Begin?</h2>
+        <p class="text-muted">We’re here to take care of you, wherever you are.</p>
+
+        <div class="row gy-4 align-items-center">
+          <!-- Left: Form -->
+          <div class="col-12 col-lg-8">
+            <form class="row g-3 needs-validation" novalidate>
+              <!-- Row 1 -->
+              <div class="col-12 col-md-6">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  placeholder="Your name"
+                  autocomplete="name"
+                  required
+                />
+                <div class="invalid-feedback">Please enter your name.</div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="phone" class="form-label">Phone</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  placeholder="(###) ###-####"
+                  inputmode="tel"
+                  autocomplete="tel"
+                  required
+                />
+                <div class="invalid-feedback">Please enter your phone number.</div>
+              </div>
+
+              <!-- Row 2 -->
+              <div class="col-12 col-md-6">
+                <label for="zip" class="form-label">ZIP/Postal Code</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="zip"
+                  name="zip"
+                  placeholder="ZIP code"
+                  autocomplete="postal-code"
+                  required
+                />
+                <div class="invalid-feedback">Please enter your ZIP/Postal Code.</div>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label for="weeks" class="form-label">How many weeks are you?</label>
+                <select class="form-select" id="weeks" name="weeks" required>
+                  <option value="">Select</option>
+                  <option value="0-8">0-8 weeks</option>
+                  <option value="9-16">9-16 weeks</option>
+                  <option value="17-24">17-24 weeks</option>
+                  <option value="25-32">25-32 weeks</option>
+                  <option value="33+">33+ weeks</option>
+                </select>
+                <div class="invalid-feedback">Please select an option.</div>
+              </div>
+
+              <!-- Notes spanning both columns -->
+              <div class="col-12">
+                <label for="notes" class="form-label">Notes</label>
+                <textarea
+                  class="form-control"
+                  id="notes"
+                  name="notes"
+                  rows="4"
+                  placeholder="Add any notes or preferences"
+                ></textarea>
+              </div>
+
+              <div class="col-12 mt-2">
+                <div class="d-grid d-md-flex justify-content-md-start">
+                  <button type="submit" class="btn btn-outline-primary rounded-pill fs-6 w-50">
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <!-- Right: Actions -->
+          <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center h-100 mt-4 mt-lg-0">
+            <div class="d-flex flex-column gap-2 w-100">
+              <a href="https://www.optimantra.com/optimus/patient/patientaccess/modalities?pid=aW9kcWFMNis2blNxN1Q1M0U1MHc2QT09&lid=RGI5R2o0cVJ0UXo1OEdueE9lYy9sZz09" target="_blank" class="btn btn-primary rounded-pill fs-5 w-100">Book Your Ultrasound</a>
+              <a href="https://www.optimantra.com/optimus/om/patient/login?accessPoint=VVFaSGFUcmJvS1dGcU1XODFyQlJVdz09" target="_blank" class="btn btn-outline-primary rounded-pill fs-5 w-100">Start Televisit</a>
+              <a href="https://www.optimantra.com/optimus/patient/patientaccess/onlinegiftcard?pid=dmt1UGpEVm9JVElLSG1vajgxVXRxUT09" target="_blank" class="btn btn-primary rounded-pill fs-5">Buy Gift Card</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+

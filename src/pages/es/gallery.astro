@@ -1,0 +1,128 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+---
+
+<Layout
+  lang="es"
+  title="Galería | Ultrasonidos en Tampa y 8K foto bebé"
+  metaDescription="Explora nuestra galería: recuerdos de ultrasonido 3D/4D en Tampa y experiencias de Ultrasonido 8K en Tampa (8K foto bebé) en un ambiente cálido y bilingüe."
+>
+  <Header lang="es" />
+  <main>
+    <section class="container py-5">
+      <section class="container py-4">
+        <div class="row justify-content-center mb-5">
+          <div class="col-12 text-center">
+            <h1 class="fw-bold mb-2">Galería</h1>
+            <p class="text-body-secondary mb-0">Una colección de momentos y recuerdos.</p>
+          </div>
+        </div>
+
+        <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner pb-3">
+            <div class="carousel-item active">
+              <div class="row justify-content-center g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <figure class="card border-0 shadow-sm h-100">
+                    <img
+                      src="/img/gallery/galeria_1.webp"
+                      class="card-img-top"
+                      alt="Ultrasonido 8K 1"
+                      loading="lazy"
+                      data-aos="flip-left"
+                      data-aos-delay="0"
+                    />
+                    <figcaption class="card-body">
+                      <h2 class="h6 fw-bold mb-1">Ultrasonido 8K en Tampa</h2>
+                      <p class="text-body-secondary mb-0">Imágenes hiperrealistas que resaltan cada detalle del rostro del bebé.</p>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                  <figure class="card border-0 shadow-sm h-100">
+                    <img
+                      src="/img/gallery/galeria_2.webp"
+                      class="card-img-top"
+                      alt="Ultrasonido 8K 2"
+                      loading="lazy"
+                      data-aos="flip-left"
+                      data-aos-delay="150"
+                    />
+                    <figcaption class="card-body">
+                      <h2 class="h6 fw-bold mb-1">8K foto bebé</h2>
+                      <p class="text-body-secondary mb-0">Descubre expresiones y rasgos con tecnología de última generación.</p>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                  <figure class="card border-0 shadow-sm h-100">
+                    <img
+                      src="/img/gallery/galeria_3.webp"
+                      class="card-img-top"
+                      alt="Ultrasonido 8K 3"
+                      loading="lazy"
+                      data-aos="flip-left"
+                      data-aos-delay="300"
+                    />
+                    <figcaption class="card-body">
+                      <h2 class="h6 fw-bold mb-1">Recuerdo inolvidable</h2>
+                      <p class="text-body-secondary mb-0">La mejor calidad para un recuerdo de embarazo para toda la vida.</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row justify-content-center g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <figure class="card border-0 shadow-sm h-100">
+                    <img src="/img/gallery/galeria_4.webp" class="card-img-top" alt="Ultrasonido 2D 1" loading="lazy" />
+                    <figcaption class="card-body">
+                      <h2 class="h6 fw-bold mb-1">Ultrasonido 2D</h2>
+                      <p class="text-body-secondary mb-0">Imágenes clásicas para observar movimientos y etapas.</p>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                  <figure class="card border-0 shadow-sm h-100">
+                    <img src="/img/gallery/galeria_5.webp" class="card-img-top" alt="Ultrasonido 2D 2" loading="lazy" />
+                    <figcaption class="card-body">
+                      <h2 class="h6 fw-bold mb-1">Primeros movimientos</h2>
+                      <p class="text-body-secondary mb-0">Una forma hermosa de ver el primer movimiento y latido.</p>
+                    </figcaption>
+                  </figure>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                  <figure class="card border-0 shadow-sm h-100">
+                    <img src="/img/gallery/galeria_6.webp" class="card-img-top" alt="Ultrasonido 2D 3" loading="lazy" />
+                    <figcaption class="card-body">
+                      <h2 class="h6 fw-bold mb-1">Momento en familia</h2>
+                      <p class="text-body-secondary mb-0">Experiencia electiva en un ambiente cálido y guiado.</p>
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center gap-2 mt-3">
+            <button class="btn btn-outline-primary btn-sm" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">Anterior</button>
+            <button class="btn btn-outline-primary btn-sm" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">Siguiente</button>
+          </div>
+        </div>
+
+        <p class="text-center text-muted mt-4 mb-0">
+          ¿Buscas <strong>Ultrasonido 3D 4D cerca de mí</strong>? Agenda una sesión en Tampa o consulta por <strong>ultrasonido en domicilio</strong>.
+        </p>
+      </section>
+    </section>
+  </main>
+  <Footer />
+</Layout>

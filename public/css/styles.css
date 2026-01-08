@@ -1,6 +1,91 @@
+
+/* Gradient Backgrounds and Text Styles */
 .blue-gradient{
     background: #2F75E6;
     background: radial-gradient(circle, rgba(47, 117, 230, 1) 0%, rgba(40, 65, 105, 1) 100%);
+}
+
+.light-blue-gradient{
+    background: #4D7ECA;
+    background: linear-gradient(90deg, rgba(77, 126, 202, 1) 0%, rgba(38, 62, 100, 1) 100%);
+}
+
+.golden-gradient{
+    background: #CAA33C;
+    background: linear-gradient(90deg, rgba(202, 163, 60, 1) 0%, rgba(238, 208, 129, 1) 100%);
+}
+
+/*Text Gradients*/
+
+.text-blue-gradient {
+    font-size: 3rem;
+    font-weight: bold;
+  background: radial-gradient(circle, rgba(47, 117, 230, 1) 0%, rgba(40, 65, 105, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-light-blue-gradient {
+    font-size: 3rem;
+    font-weight: bold;
+  background: linear-gradient(90deg, rgba(77, 126, 202, 1) 0%, rgba(38, 62, 100, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.text-golden-gradient {
+    font-size: 3rem;
+    font-weight: bold;
+  background: linear-gradient(90deg, rgba(202, 163, 60, 1) 0%, rgba(238, 208, 129, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-dark-golden{
+    color: #83681d;
+}
+.text-primary-subtle {
+    color: #3b6ab0;
+}
+
+.btn-outline-primary-subtle {
+    color: #3b6ab0;
+    border-color: #3b6ab0;
+}
+.btn-outline-primary-subtle:hover {
+    background-color: #3b6ab0;
+    color: #ffffff;
+    border-color: #3b6ab0;
+}
+/*Gradient Shadows*/
+
+.shadow-blue-gradient {
+    box-shadow: 0 4px 24px 0 rgba(47, 117, 230, 2);
+}
+
+.shadow-light-blue-gradient {
+    box-shadow: 0 4px 24px 0 rgba(77, 126, 202, 2);
+}
+
+.shadow-golden-gradient {
+    box-shadow: 0 4px 24px 0 rgba(202, 163, 60, 2);
+}
+
+/*Effects*/
+
+.scale-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform: scale(0.97);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+.scale-effect:hover {
+  transform: scale(1);
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.18);
 }
 
 .baby-banner {
@@ -14,3 +99,23 @@
         top: 0;
     }
 }
+
+.color-primary-subtle {
+    color: #3b6ab0;
+}
+
+
+  .blue-card-bg {
+    background: #000074;
+    color: #FFF;
+  }
+  .blue-card{
+    color: #000074;
+  }
+
+  .border-vline{
+    border-left: 2px solid #000074;
+  }
+
+
+

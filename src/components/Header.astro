@@ -1,8 +1,19 @@
+---
+const { lang = 'en' } = Astro.props;
+
+const pathname = Astro.url?.pathname ?? '/';
+const isSpanish = pathname === '/es' || pathname.startsWith('/es/');
+const basePrefix = lang === 'es' ? '/es' : '';
+
+const enPath = isSpanish ? pathname.replace(/^\/es(\/|$)/, '/') : pathname;
+const esPath = isSpanish ? pathname : `/es${pathname === '/' ? '/' : pathname}`;
+---
+
 <header class="navbar navbar-expand-lg bg-white border-bottom">
   <div class="container">
     <!-- Logo -->
-    <a class="navbar-brand d-flex align-items-center me-5" href="/">
-      <img src='/img/logo.png' alt="Logo" class="img-fluid" style="max-height:80px;" />
+    <a class="navbar-brand d-flex align-items-center me-5 py-0" href={`${basePrefix}/`}>
+      <img src='/img/logo.png' alt="Logo" class="img-fluid" style="max-height:120px;" />
     </a>
 
     <!-- Toggler -->
@@ -15,30 +26,43 @@
       <!-- Menu -->
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item mx-2">
-          <a class="nav-link" aria-current="page" href="#">Home</a>
+          <a class="nav-link" aria-current="page" href={`${basePrefix}/`}>{lang === 'es' ? 'Inicio' : 'Home'}</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="#">About Us</a>
+          <a class="nav-link" href={`${basePrefix}/about`}>{lang === 'es' ? 'Sobre Nosotros' : 'About Us'}</a>
+        </li>
+        <li class="nav-item dropdown mx-2">
+          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            {lang === 'es' ? 'Servicios' : 'Services'}
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+            <li>
+              <a class="dropdown-item" href={`${basePrefix}/telemedicine`}>{lang === 'es' ? 'Telemedicina' : 'Telemedicine'}</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href={`${basePrefix}/ultrasound`}>{lang === 'es' ? 'Ultrasonido' : 'Ultrasound'}</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href={`${basePrefix}/8k`}>{lang === 'es' ? 'Imagen 8K' : '8K Image'}</a>
+            </li>
+          </ul>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href={`${basePrefix}/gallery`}>{lang === 'es' ? 'Galería' : 'Gallery'}</a>
         </li>
         <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Gallery</a>
-        </li>
-        <li class="nav-item mx-2">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href={`${basePrefix}/contact`}>{lang === 'es' ? 'Contacto' : 'Contact'}</a>
         </li>
       </ul>
 
       <!-- Language + Buttons -->
       <div class="d-flex align-items-center gap-3">
-        <a href="#" class="btn btn-warning rounded-pill text-white fw-semibold"><img src="/img/home/phone_call.svg" alt="Call Us" class="me-2" />Call Us</a>
-        <a href="#" class="btn btn-outline-warning rounded-pill fw-semibold">Book Now</a>
+        <a href="#" class="btn btn-warning rounded-pill text-white fw-semibold"><img src="/img/home/phone_call.svg" alt="Call Us" class="me-2" />{lang === 'es' ? 'Llámanos' : 'Call Us'}</a>
+        <a href="https://www.optimantra.com/optimus/patient/patientaccess/modalities?pid=aW9kcWFMNis2blNxN1Q1M0U1MHc2QT09&lid=RGI5R2o0cVJ0UXo1OEdueE9lYy9sZz09" target="_blank" class="btn btn-outline-warning rounded-pill fw-semibold">{lang === 'es' ? 'Reservar' : 'Book Now'}</a>
         <div class="d-flex align-items-center">
-          <a href="#" class="link-secondary text-decoration-none me-2">ES</a>
+          <a href={esPath} class="link-secondary text-decoration-none me-2">ES</a>
           <span class="text-secondary">|</span>
-          <a href="#" class="link-secondary text-decoration-none ms-2">EN</a>
+          <a href={enPath} class="link-secondary text-decoration-none ms-2">EN</a>
         </div>
       </div>
     </div>
